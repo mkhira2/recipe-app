@@ -1,15 +1,25 @@
+<<<<<<< HEAD
+<a
+  style="cursor: pointer;"
+  [routerLink]="[index]"
+  routerLinkActive="active"
+  class="list-group-item clearfix">
+  <div class="pull-left">
+=======
 <a 
-href="#" 
-class="list-group-item clearfix">
+style="cursor: pointer;"
+class="list-group-item clearfix"
+(click)="onSelected()">
 <div class="pull-left">
+>>>>>>> 511bd9b7a4157da6eb00f5bc1810cbe5d63b7fcd
     <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
     <p class="list-group-item-text">{{ recipe.description }}</p>
-</div>
-<span class="pull-right">
-    <img 
-        [src]="recipe.imagePath" 
-        alt="{{ recipe.name }}" 
-        class="img-responsive" 
-        style="max-height: 50px;">
-</span>
+  </div>
+  <span class="pull-right">
+        <img
+          [src]="recipe.imagePath"
+          alt="{{ recipe.name }}"
+          class="img-responsive"
+          style="max-height: 50px;">
+      </span>
 </a>
